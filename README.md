@@ -74,6 +74,24 @@ Si un fichier manque, la voix de l'appareil prend automatiquement le relais.
 
 Double-cliquez (ou clic droit → *Exécuter avec PowerShell*) sur `outils/serveur-local.ps1`, puis ouvrez <http://localhost:8080/> dans Chrome ou Edge. Les outils de développement (F12 → icône téléphone) permettent de simuler un iPhone.
 
+## Tests automatiques (facultatif)
+
+Ils vérifient le jeu dans le moteur de Safari (WebKit), sur iPhone et iPad, en portrait et en paysage : zoom bloqué, coin maison, tailles des cibles, pause, rotation, hors-ligne, absence d'erreurs. Ils nécessitent Node.js :
+
+```bash
+npm install
+```
+
+```bash
+npx playwright install webkit
+```
+
+```bash
+npm test
+```
+
+Ces tests ne remplacent pas un essai sur le vrai appareil : son, voix, mode silencieux, installation sur l'écran d'accueil et Accès guidé ne peuvent être vérifiés que sur l'iPhone ou l'iPad.
+
 ## Organisation du code
 
 Site statique en JavaScript natif, sans framework ni étape de compilation.
