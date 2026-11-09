@@ -38,7 +38,7 @@ Dans les options de l'Accès guidé, vous pouvez aussi désactiver les **boutons
 
 1. Créez un compte gratuit sur <https://github.com> (si vous n'en avez pas).
 2. En haut à droite : **+ → New repository**. Nom : par exemple `coucou`. Cochez **Public** (obligatoire pour Pages gratuit), puis **Create repository**.
-3. Sur la page du dépôt vide, cliquez sur **uploading an existing file**. Glissez-déposez **tout le contenu** du dossier `Baby` (les dossiers `css`, `icons`, `js`, `outils` et les fichiers `index.html`, `manifest.webmanifest`, `sw.js`, `README.md`). Le fichier `BRIEF_JEU_BEBE.md` est facultatif. Cliquez sur **Commit changes**.
+3. Envoyez les fichiers avec Git depuis le dossier du projet (`git push`). Sans Git, sur la page du dépôt, **Add file → Upload files** : glissez le **contenu** du dossier (pas le dossier lui-même), **sans** `node_modules`, `test-results` ni `playwright-report`.
 4. Allez dans **Settings → Pages**. Sous *Build and deployment*, choisissez **Source : Deploy from a branch**, puis **Branch : main** et **/ (root)** → **Save**.
 5. Après 1 à 2 minutes, l'adresse apparaît en haut de cette page, du type `https://VOTRE-NOM.github.io/coucou/`.
 
